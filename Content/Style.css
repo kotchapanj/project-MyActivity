@@ -1,0 +1,306 @@
+﻿
+
+#Template{
+    min-width: 600px;
+}
+#transac_id{
+    min-width: 600px;
+}
+.BackGroundRecive {
+background-color:#f3dbe1;
+}
+
+.BackGroundSend {
+background-color:#def6d6;
+}
+
+.TranPage 
+{
+    background-color:antiquewhite;
+    width:595px;
+    height:842px;
+}
+
+.radioLeft
+{
+    text-align:left;
+}
+
+#yello {
+background-color:#fcfa99;
+}
+.yello {
+background-color:#fcfa99;
+}
+
+.fontRed {
+color:red;
+background-color:antiquewhite;
+}
+.fontRedTemplate {
+color:red;
+}
+#fontRed {
+color:red;
+background-color:antiquewhite;
+}
+.fontStrong {
+font-weight:500;
+}
+
+/*Start MenuScroll*/
+.f-nav{  /* To fix main menu container */
+z-index: 9999;
+position: fixed;
+left: 0;
+top: 51px;
+width: 100%;
+}
+
+#main-menu-container {
+    text-align: center; /* Assuming your main layout is centered */
+
+}
+#main-menu {
+    display: inline-block;
+    width: 98%; /* Your menu's width */
+}
+
+#icon_create {
+    background-image: url('Image/Button/btn_additem.png');
+    display:block;
+    width:35px;
+    height: 35px;
+    margin-right:10px;
+    float:left;
+
+}
+
+#icon_refresh {
+    background-image: url('Image/Button/btn_refresh.png');
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    float: left;
+}
+#icon_genXML {
+    background-image: url('Image/Button/btn_genXML.png');
+    display:block;
+    width:35px;
+    height: 35px;
+    margin-right:10px;
+    float:left;
+}
+#icon_back {
+    background-image: url('Image/Button/btn_back.png');
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    float: left;
+}
+#icon_saveDraft {
+    background-image: url('Image/Button/btn_save.png');
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    float: left;
+}
+#icon_approve {
+    background-image: url('Image/Button/btn_mark.png');
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+
+.btnx_approve {
+    /*background-image: url('Image/Button/btnx_approve.gif');*/
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    float: left;
+}
+.btnx_delete {
+    background-image: url('Image/Button/btnx_delete.gif');
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+.btnx_detail {
+    background-image: url('Image/Button/btnx_detail.gif');
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+.btnx_edit {
+    background-image: url('Image/Button/btnx_edit.gif');
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    float: left;
+}
+.btnx_print {
+    background-image: url('Image/Button/btnx_print.png');
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    float: left;
+}
+.btnx_reject {
+    background-image: url('Image/Button/btnx_reject.gif');
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    float: left;
+}
+.btnx_copy {
+    background-image: url('Image/Button/btnx_copy.gif');
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    float: left;
+}
+
+#icon_search {
+
+}
+
+#icon_edit {
+
+}
+
+#icon_tash {
+
+}
+
+#icon_reject {
+    background-image: url('Image/Button/btn_reject_big.gif');
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+#statusDraft { /* 1 */
+    padding-left:5px;
+    background-color:dimgray;
+    color:black;
+}
+#statusWaiting { /* 2 */
+    padding-left:5px;
+    background-color:saddlebrown;
+    color:black;
+}
+
+#statusReadySend { /* 3 */
+    padding-left:5px;
+    background-color:darkcyan;
+    color:black;
+}
+
+#statusEdit { /* 4 */
+    padding-left:5px;
+    background-color:darkmagenta;
+    color:black;
+}
+
+#statusWaitingReceive { /* 5 */
+    padding-left:5px;
+    background-color:yellow;
+    color:black;
+}
+
+#statusCancel { /* 6 */
+    padding-left:5px;
+    background-color:darkorchid;
+    color:black;
+}
+
+#statusNotPass { /* 6 */
+    padding-left:5px;
+    background-color:mistyrose;
+    color:black;
+}
+
+.blogCoppy { /* 6 */
+    width:650px;
+    height:40px;
+
+}
+
+.colorRed { /* 6 */
+color:red;
+
+}
+
+.label-new-bg {
+  background-color: #f37e4b;
+}
+
+/*--Begin Add By Chanunyu 13/12/2017--*/
+.fontBlack{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight:bold;
+  color: black;
+}
+
+.fontNormal{
+  font-size: 13px !important;
+}
+
+.fontBold{
+  font-weight:bold;
+  color: black;
+}
+
+table {
+    font-family: "Arial";
+    font-size: 13px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.selectList {
+    max-width: 620px;
+}
+
+.col-sm-fix {
+    padding-top: 5px;
+}
+
+
+.input-group-fix {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+/*--End Add By Chanunyu 13/12/2017--*/
+/*  End MenuScroll */
+
+
+/*Page Index*/
+/*.Bg_Index {
+    background-image: url('themes/base/images/header.jpg');
+    background-repeat:no-repeat;   
+    background-position:center;
+    background-size:initial;
+}*/
+
+/*End Page Index*/

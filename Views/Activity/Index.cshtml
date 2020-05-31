@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Map Sample | Longdo Map</title>
+    <style type="text/css">
+        html {
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+        }
+
+        body {
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+            flex: 4;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        #searchPlace {
+            flex: 2;
+        }
+
+        #result {
+            height: 400px;
+            overflow-y: scroll;
+        }
+
+        #suggest {
+            position: absolute;
+            display: none;
+            background-color: azure;
+            border: 1px solid #000000;
+            padding: 4px;
+            flex-direction: column;
+        }
+    </style>
+    <script type="text/javascript" src="https://api.longdo.com/map/?key=451c751a0e4183aea3747e94cf68f7d5">
+    </script>
+    <script>
+        var map;
+        var search;
+        function init() {
+            map = new longdo.Map({
+                placeholder: document.getElementById('map'),
+
+            });
+            search = document.getElementById('search');
+            map.Search.placeholder(
+                document.getElementById('result')
+            );
+            //When user press an Enter button #search
+            search.onkeyup = function (event) {
+                if ((event || window.event).keyCode != 13)
+                    return;
+                doSearch();
+            }
+            search.oninput = function () {
+                if (search.value.length < 3) {
+                    suggest.style.display = 'none';
+                    return;
+                }
+
+                map.Search.suggest(search.value, {
+                    area: document.getElementById('area').value
+                });
+            };
+        }
+        function doSearch() {
+            map.Search.search(search.value, {
+                tag: document.getElementById('search').value,
+            });
+            suggest.style.display = 'none';
+        }
+    </script>
+</head>
+<body onload="init();">
+
+    <div id="map"></div>
+    </br>
+    <div id="searchPlace">
+        <input id="search" class="form-control col-lg-10" placeholder="Search" maxlength="250"></input>
+        <input type="button"
+        class="btn btn-secondary col-lg-1"
+        value="New Activity"
+        onclick="location.href='@Url.Action("Create", "Activity")'" />
+
+        <div id="result">
+            
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
